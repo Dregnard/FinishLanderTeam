@@ -4,7 +4,7 @@ Integrantes: Fabian Carreras, Joan Socias, Andres Rivero.
 # Luna Lander Version 0.0
 enlace: https://github.com/urbinapro/lunar-landing-javascript
 
-La version 0.0 del videojuego hace referencia a todo el codigo desde que partimos para el desarrollo de la aplicacion.
+La version 0.0 del videojuego hace referencia al código desde que partimos para el desarrollo de la aplicación.
 Este código consta de varios de archivos:
  
  Documentos HTML:
@@ -16,9 +16,10 @@ Este código consta de varios de archivos:
  	    d.css: es la hoja de estilo importada al archivo index.html siempre y cuando el ancho de la pantalla del ordenador supere los           961pxpx.
       
       m.css: es la hoja de estilo importada al archivo index.html siempre y cuando el ancho de la pantalla del ordenador esté por debajo de los 960px.
+   
    Documento javascript:
       
-      La funcion del archivo de javascript dar la animacion correspondiente a la nave en funcion de la velocidad y la altura
+      js.js: La funcion del archivo de javascript dar la animacion correspondiente a la nave en funcion de la velocidad y la altura
 
 
 
@@ -32,13 +33,17 @@ Tareas a desarrollar:
 * Instrucciones del juego
 
 
-### Aportaciones al HTML:
-* UTF-8
-* Head: descripción incluida en el meta. En la instancia al CSS,  
-* Body
-* Menu instrucciones: Muestra las instrucciones
-* Menu opciones: Muestra las opciones y permite cambiarlas.
-* Menu about: Muestra el About
+### cambios en el HTML:
+    index.html : contiene el login y el resgiter.
+
+### Documento JSP
+  game.jsp: es la página principal del juego y contiene todos los objetos que lo conforman.
+     * UTF-8
+     * Head: descripción incluida en el meta. En la instancia al CSS,  
+     * Body
+     * Menu instrucciones: Muestra las instrucciones
+     * Menu opciones: Muestra las opciones y permite cambiarlas.
+     * Menu about: Muestra el About
 
 ### Aportaciones al CSS
 * Discriminación entre PC y móvil según el tamaño de la pantalla.
