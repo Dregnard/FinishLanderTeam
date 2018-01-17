@@ -143,16 +143,32 @@ Registrar Usuario:
    
    #### Guardar Configuracion ####
    
-   Para guardar la configuracion del usuario emplearemos el servlet "guardarConfiguracion"
+   Para guardar la configuracion del usuario emplearemos el metodo doPost() del servlet "Guardar".
    
-   mostrar los parametros y metodos con los que trabajamos
+   **Parametros recibidos:**
+   * username: nombre del usuario al cual se le va crear una nueva configuracion.
+   
+   **Definicion del proceso**
+   
+    * Si el usuario no existe, devolver el mensaje "error", "Usuario no encontrado"
+    * Si existe, crear un String en formato json y devolver el mensaje "mess", "Configuration añadida"
+    * Si ocurre una excepvion, devolver el mensaje de error:  emess.put("error", "Error en configuraciones");
+
    
    #### Cargar Configuracion #### 
    
-   Para cargar la configuracion del usuario emplearemos el servlet "cargarConfiguracion"
+   Para cargar la configuracion del usuario emplearemos el método doPost() del servlet "Cargar". 
    
-    mostrar los parametros y metodos con los que trabajamos
+   **Parametros recibidos:**
+   * username: nombre del usuario con el cual se desea obtener todas las configuraciones.
    
+   **Definicion del proceso:**
+   
+    * Si el usuario no existe devuelve el mensaje de error "error", "User not found".
+    * Si existe, devolver un String en formato json.
+    * Si ocurre un a excepcion, devolver el mensaje de error:  emess.put("error", e.toString());
+    
+    
   
    
    # Luna Lander Version 4.0
