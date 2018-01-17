@@ -19,7 +19,7 @@ Este código consta de varios de archivos:
    
    Documento javascript:
       
-      js.js: La funcion del archivo de javascript dar la animacion correspondiente a la nave en funcion de la velocidad y la altura
+       js.js: La funcion del archivo de javascript dar la animacion correspondiente a la nave en funcion de la velocidad y la altura
 
 
 
@@ -33,23 +33,23 @@ Tareas a desarrollar:
 * Instrucciones del juego
 
 
-### cambios en el HTML:
-    index.html : contiene el login y el resgiter.
 
-### Documento JSP
-  game.jsp: es la página principal del juego y contiene todos los objetos que lo conforman.
-     * UTF-8
-     * Head: descripción incluida en el meta. En la instancia al CSS,  
-     * Body
-     * Menu instrucciones: Muestra las instrucciones
-     * Menu opciones: Muestra las opciones y permite cambiarlas.
-     * Menu about: Muestra el About
 
 ### Aportaciones al CSS
+
 * Discriminación entre PC y móvil según el tamaño de la pantalla.
 * Estilos menús (Pausa, Instrucciones, Opciones y About): En el móvil, ocupan un 100% de la pantalla, en el ordenador aparecen centrados en el centro.
 
+ **responisve.css**: es la hoja de estilo importada al archivo game.jsp siempre y cuando el ancho de la pantalla del ordenador supere los           601px.
+      
+ **smartphone.css**: es la hoja de estilo importada al archivo game.jsp siempre y cuando el ancho de la pantalla del ordenador esté por debajo de los 600px.
+ 
+  **text.css** : es la hoja de estilo del login y el register.
+  
+  **acerca_responsive.css**: la hoja de estilo de la informacion del juego
+
 ### Aportaciones al JS:
+
 * Version Móvil: La nave se mueve al poner el dedo en la pantalla (ontouch).
 * Version PC: La nave se mueve SOLO al pulsar la barra espaciadora (no funciona con ninguna otra tecla).
 * Mostrar/Ocultar los divs de los elementos del menú (instrucciones, opciones, about...):
@@ -60,11 +60,37 @@ Tareas a desarrollar:
 * Imagen Nave: La nave expulsará fuego de los motores cuando aceleremos y explotará si no aterrizamos adecuadamente.
 * Lugar Aterrizaje: superficie Luna.
 
+**jsjuego.js** : La funcion del archivo de javascript dar la animacion correspondiente a la nave en funcion de la velocidad y la altura, así como el control de la misma siempre teniendo en cuenta la cantidad de fuel que hay en el despósito.
+
+### Imagenes:
+ 
+ En la carpeta **img** se encuentran todas las imagenes que intervienen en el desarrollo del juego.
+
 # Luna Lander Version 2.0
  Tareas a desarrollar : 
 
 * Añadiremos un Login y un SignUp.
 * Crearemos una Base de Datos.
+
+### cambios en el HTML:
+  
+  **index.html** : contiene el login y el resgiter.
+ 
+ ### Documento JSP
+ 
+ **game.jsp**: es la página principal del juego y contiene todos los objetos que lo conforman.
+    
+     * UTF-8
+     * Head: descripción incluida en el meta. En la instancia al CSS,  
+     * Body
+     * Menu instrucciones: Muestra las instrucciones
+     * Menu opciones: Muestra las opciones y permite cambiarlas.
+     * Menu about: Muestra el About
+     
+  ### Aportaciones al JS:
+  
+  **js.js**: La funcion del archivo de javascript es permitir al usario registrarse y hacer login en el juego.
+
 
 ## SignUp
 
@@ -188,6 +214,7 @@ Registrar Usuario:
   Para guardar la puntuacion del usuario emplearemos el metodo doPost() del servlet "guardarScore".
    
  **Definicion del proceso:**
+   
     * La configuración la obtenemos a partir de los parámetros. 
     * Creamos el objeto "core" con la configuracion obtenida.
     * Realizamos un insert de la tabla Score de la base de datos.
