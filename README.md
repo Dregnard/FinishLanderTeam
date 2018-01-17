@@ -141,7 +141,7 @@ Registrar Usuario:
    * Cargar configuracion del usuario.
   
    
-   #### Guardar Configuracion ####
+   ### Guardar Configuracion ###
    
    Para guardar la configuracion del usuario emplearemos el metodo doPost() del servlet "Guardar".
    
@@ -155,7 +155,7 @@ Registrar Usuario:
     * Si ocurre una excepvion, devolver el mensaje de error:  emess.put("error", "Error en configuraciones");
 
    
-   #### Cargar Configuracion #### 
+   ### Cargar Configuracion ### 
    
    Para cargar la configuracion del usuario emplearemos el método doPost() del servlet "Cargar". 
    
@@ -168,14 +168,25 @@ Registrar Usuario:
     * Si existe, devolver un String en formato json.
     * Si ocurre un a excepcion, devolver el mensaje de error:  emess.put("error", e.toString());
     
-    
-  
    
    # Luna Lander Version 4.0
    
-   Score
+   Tareas a desarrollar : 
+
+   * Score
    
+   En esta version desarrollaremos la etapa de puntuacion del juego. Esta etapa está compuesta principalmente por el apatartado: 
+   * Guardar puntuacion del usuario.
    
-   # Luna Lander Version 5.0
+ 
+  ### Guardar Score ###
+  Para guardar la puntuacion del usuario emplearemos el metodo doPost() del servlet "guardarScore".
    
-   frontend
+ **Definicion del proceso:**
+    * La configuración la obtenemos a partir de los parámetros. 
+    * Creamos el objeto "core" con la configuracion obtenida.
+    * Realizamos un insert de la tabla Score de la base de datos.
+    * Nos devuelve el mensaje: "mess", "Puntuacion añadida""
+    * Si ocurre un a excepcion, devolver un mensaje de error.
+   
+  
