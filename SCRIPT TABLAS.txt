@@ -1,0 +1,30 @@
+create database lunarLander; use lunarLander;
+
+create table users(
+id int not null,
+nombre varchar(15) not null,
+username varchar(15) not null,
+password varchar(15) not null,
+PRIMARY KEY(id)
+);
+
+CREATE TABLE configuration(
+id int NOT NULL,
+user_id int NOT NULL,
+dif_id int NOT NULL,
+nave_id int NOT NULL,
+luna_id int NOT NULL,
+PRIMARY KEY(id),
+FOREIGN KEY(user_id) references users(id)
+);
+
+CREATE TABLE score(
+id int NOT NULL,
+conf_id int NOT NULL,
+speed float NOT NULL,
+fuel float NOT NULL,
+iniTime time NOT NULL,
+endTime time NOT NULL,
+PRIMARY KEY(id),
+FOREIGN KEY(conf_id) REFERENCES configuration(id) 
+);
