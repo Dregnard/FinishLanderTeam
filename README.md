@@ -93,7 +93,7 @@ Este código consta de varios de archivos:
   **js.js**: La función del archivo de javascript es permitir al usario registrarse y hacer login en el juego.
 
 
-## SignUp
+### SignUp
 
 Registrar Usuario:
  
@@ -109,7 +109,7 @@ Registrar Usuario:
   
   Si ocurre una excepción, devolver un mensaje de error: "Error de registro"
   
-  ## Login
+  ### Login
   
   Iniciar Session: El usuario ha de estar previamente registrado para poder hacer Login. 
   
@@ -131,7 +131,7 @@ Registrar Usuario:
     * Si ocurre una excepcion, devolver un mensaje.
 
     
-   ## Base de Datos
+   ### Base de Datos
    
    La base de datos del videojuego se compone de tres tablas relacionadas:
      
