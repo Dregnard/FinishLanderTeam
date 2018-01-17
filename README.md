@@ -4,49 +4,46 @@ Integrantes: Fabian Carreras, Joan Socias, Andres Rivero.
 # Luna Lander Version 0.0
 enlace: https://github.com/urbinapro/lunar-landing-javascript
 
-La version 0.0 del videojuego hace referencia al código desde que partimos para el desarrollo de la aplicación.
+La versión 0.0 del videojuego hace referencia al código desde que partimos para el desarrollo de la aplicación.
 Este código consta de varios de archivos:
  
- Documentos HTML:
+ **Documentos HTML:**
   
      index.html : es la página principal del juego y contiene todos los objetos que lo conforman.
     
-  Documentos CSS:
+  **Documentos CSS:**
   
  	    d.css: es la hoja de estilo importada al archivo index.html siempre y cuando el ancho de la pantalla del ordenador supere los           961pxpx.
       
       m.css: es la hoja de estilo importada al archivo index.html siempre y cuando el ancho de la pantalla del ordenador esté por debajo de los 960px.
    
-   Documento javascript:
+   **Documentos javascript:**
       
-       js.js: La funcion del archivo de javascript dar la animacion correspondiente a la nave en funcion de la velocidad y la altura
+       js.js: La función del archivo de javascript dar la animación correspondiente a la nave en función de la velocidad y la altura
 
 
 
 # Luna Lander Version 1.0
 
-Tareas a desarrollar:
+**Tareas a desarrollar:**
 
 * Incorporar las diferentes imágenes al proyecto: Naves, Luna, fondo y las diferentes herramientas de menu.
 * Dificultad del juego: Diferentes modos de juego.
 * Menú: Diferentes menus según las pantallas.
-* Instrucciones del juego
-
-
-
+* Instrucciones del juego.
 
 ### Aportaciones al CSS
 
 * Discriminación entre PC y móvil según el tamaño de la pantalla.
 * Estilos menús (Pausa, Instrucciones, Opciones y About): En el móvil, ocupan un 100% de la pantalla, en el ordenador aparecen centrados en el centro.
 
- **responisve.css**: es la hoja de estilo importada al archivo game.jsp siempre y cuando el ancho de la pantalla del ordenador supere los           601px.
+ **responisve.css**: es la hoja de estilo importada al archivo game.jsp siempre y cuando el ancho de la pantalla del ordenador supere los 601px.
       
  **smartphone.css**: es la hoja de estilo importada al archivo game.jsp siempre y cuando el ancho de la pantalla del ordenador esté por debajo de los 600px.
  
   **text.css** : es la hoja de estilo del login y el register.
   
-  **acerca_responsive.css**: la hoja de estilo de la informacion del juego
+  **acerca_responsive.css**: la hoja de estilo de la información del juego
 
 ### Aportaciones al JS:
 
@@ -60,7 +57,7 @@ Tareas a desarrollar:
 * Imagen Nave: La nave expulsará fuego de los motores cuando aceleremos y explotará si no aterrizamos adecuadamente.
 * Lugar Aterrizaje: superficie Luna.
 
-**jsjuego.js** : La funcion del archivo de javascript dar la animacion correspondiente a la nave en funcion de la velocidad y la altura, así como el control de la misma siempre teniendo en cuenta la cantidad de fuel que hay en el despósito.
+**jsjuego.js** : La función del archivo de javascript dar la animación correspondiente a la nave en funcion de la velocidad y la altura, así como el control de la misma siempre teniendo en cuenta la cantidad de fuel que hay en el despósito.
 
 ### Imagenes:
  
@@ -76,10 +73,11 @@ Tareas a desarrollar:
   
   **index.html** : contiene el login y el resgiter.
  
- ### Documento JSP
+### Documento JSP
  
  **game.jsp**: es la página principal del juego y contiene todos los objetos que lo conforman.
-    
+     
+     * cabecera JSP
      * UTF-8
      * Head: descripción incluida en el meta. En la instancia al CSS,  
      * Body
@@ -87,40 +85,55 @@ Tareas a desarrollar:
      * Menu opciones: Muestra las opciones y permite cambiarlas.
      * Menu about: Muestra el About
      
-  ### Aportaciones al JS:
+### Aportaciones al JS:
   
-  **js.js**: La funcion del archivo de javascript es permitir al usario registrarse y hacer login en el juego.
+  **js.js**: La función del archivo de javascript es permitir al usario registrarse y hacer login en el juego.
 
 
 ## SignUp
 
 Registrar Usuario:
  
- Se hace una peticion al Servelt "Register" y se envian los diferentes parametros :
+ Se hace una petición al Servelt **"Register"** y se envian los diferentes parámetros :
   
    * name : nombre real del usuario
    * username: nombre con el que el usuario quiere que se le identifique en el juego.
    * password : contraseña del usuario.
   
-  Si el registro es un exito el Servlet devuelve el mensaje "Usuario registrado correctamente".
+  Si el registro es un éxito el Servlet devuelve el mensaje "Usuario añadido correctamente".
   
-  Si el usuario existe el Servlet devuelve el mensaje "Usuario ya está regitrado".
+  Si el usuario existe el Servlet devuelve el mensaje "El usuario ya existe".
+  
+  Si ocurre una excepción, devolver un mensaje de error: "Error de registro"
   
   ## Login
   
   Iniciar Session: El usuario ha de estar previamente registrado para poder hacer Login. 
   
-  Se hace una peticion al Servelt "Login" y comprobamos los parametros "Username" y "Password" :
+  Se hace una petición al Servelt **"Login"** y comprobamos los parametros "Username" y "Password" :
    
     * Username: nombre del usuario.
     * Password: contraseña con el que el usuario se ha registrado.
+    * Si ocurre una excepción, devolver un mensaje de error: "Error en el login"
+    
+   ## AutoLogin
+   
+   Se hace una petición al Servelt **"AutoLogin"** y mediante el objeto cookies el usuario podría hacer auto login:
+   
+   **Parametros recibidos:**
+   
+    * name : nombre real del usuario
+    * username: nombre con el que el usuario quiere que se le identifique en el juego.
+    * password : contraseña del usuario.
+    * Si ocurre una excepcion, devolver un mensaje.
+
     
    ## Base de Datos
    
    La base de datos del videojuego se compone de tres tablas relacionadas:
      
      * Tabla **user** : En esta tabla se almacenará los datos de los usuarios registrados.
-     * Tabla **configuration** : En esta tabla se guaradaran las diferentes configuraciones por usuario.
+     * Tabla **configuration** : En esta tabla se guaradarán las diferentes configuraciones por usuario.
      * Tabla **score** : En esta tabla se guardarán la puntuacion de cada usuario.
   
   #### Tabla user ####
@@ -165,30 +178,31 @@ Registrar Usuario:
 
   Tareas a desarrollar : 
 
-   * Configuracion
+   * Configuración
    
    En esta version desarrollaremos toda la etapa de configuracion del juego. Esta etapa está compuesta por principalmente por dos apatartados que son:
-   * Guardar configuracion del usuario.
-   * Cargar configuracion del usuario.
+   
+   * Guardar configuración del usuario.
+   * Cargar configuración del usuario.
   
    
    ### Guardar Configuracion ###
    
-   Para guardar la configuracion del usuario emplearemos el metodo doPost() del servlet "Guardar".
+   Para guardar la configuracion del usuario emplearemos el metodo doPost() del servlet **"Guardar"**.
    
    **Parametros recibidos:**
-   * username: nombre del usuario al cual se le va crear una nueva configuracion.
+   * username: nombre del usuario al cual se le va crear una nueva configuración.
    
    **Definicion del proceso**
    
-    * Si el usuario no existe, devolver el mensaje "error", "Usuario no encontrado"
-    * Si existe, crear un String en formato json y devolver el mensaje "mess", "Configuration añadida"
-    * Si ocurre una excepvion, devolver el mensaje de error:  emess.put("error", "Error en configuraciones");
+    * Si el usuario no existe, devolver el mensaje: "error", "Usuario no encontrado"
+    * Si existe, crear un String en formato json y devolver el mensaje: "mess", "Configuracion añadida"
+    * Si ocurre una excepción, devolver el mensaje de error: error", "Error en configuraciones"
 
    
    ### Cargar Configuracion ### 
    
-   Para cargar la configuracion del usuario emplearemos el método doPost() del servlet "Cargar". 
+   Para cargar la configuración del usuario emplearemos el método doPost() del servlet **"Cargar"**. 
    
    **Parametros recibidos:**
    * username: nombre del usuario con el cual se desea obtener todas las configuraciones.
@@ -197,7 +211,7 @@ Registrar Usuario:
    
     * Si el usuario no existe devuelve el mensaje de error "error", "User not found".
     * Si existe, devolver un String en formato json.
-    * Si ocurre un a excepcion, devolver el mensaje de error:  emess.put("error", e.toString());
+    * Si ocurre un a excepción, devolver el mensaje de error:  emess.put("error", e.toString());
     
    
    # Luna Lander Version 4.0
@@ -206,19 +220,19 @@ Registrar Usuario:
 
    * Score
    
-   En esta version desarrollaremos la etapa de puntuacion del juego. Esta etapa está compuesta principalmente por el apatartado: 
-   * Guardar puntuacion del usuario.
+   En esta versión desarrollaremos la etapa de puntuacion del juego. Esta etapa está compuesta principalmente por el apatartado: 
+   * Guardar puntuación del usuario.
    
  
   ### Guardar Score ###
-  Para guardar la puntuacion del usuario emplearemos el metodo doPost() del servlet "guardarScore".
+  Para guardar la puntuación del usuario emplearemos el metodo doPost() del servlet **"guardarScore"**.
    
  **Definicion del proceso:**
    
     * La configuración la obtenemos a partir de los parámetros. 
     * Creamos el objeto "core" con la configuracion obtenida.
     * Realizamos un insert de la tabla Score de la base de datos.
-    * Nos devuelve el mensaje: "mess", "Puntuacion añadida""
-    * Si ocurre un a excepcion, devolver un mensaje de error.
+    * Nos devuelve el mensaje: "Puntuacion añadida""
+    * Si ocurre una excepción, devolver un mensaje de error.
    
   
