@@ -5,8 +5,7 @@
  */
 package Sesion;
 
-import Conexiones.ConsultasSQL;
-import Conexiones.DBConnection;
+
 import DBlunarLander.UserJpaController;
 import DBlunarLander.Users;
 import com.google.gson.Gson;

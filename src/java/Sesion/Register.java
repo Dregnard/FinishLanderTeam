@@ -5,20 +5,14 @@
  */
 package Sesion;
 
-import Conexiones.ConsultasSQL;
-import Conexiones.DBConnection;
 import DBlunarLander.UserJpaController;
 import DBlunarLander.Users;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.servlet.ServletException;
