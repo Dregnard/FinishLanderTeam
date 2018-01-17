@@ -1,7 +1,8 @@
 # FinishLanderTeam
 Integrantes: Fabian Carreras, Joan Socias, Andres Rivero.
 
-# Luna Lander Version 0.0
+# Luna Lander 
+## Version 0.0
 enlace: https://github.com/urbinapro/lunar-landing-javascript
 
 La versión 0.0 del videojuego hace referencia al código desde que partimos para el desarrollo de la aplicación.
@@ -23,7 +24,8 @@ Este código consta de varios de archivos:
 
 
 
-# Luna Lander Version 1.0
+# Luna Lander 
+## Version 1.0
 
 **Tareas a desarrollar:**
 
@@ -63,7 +65,8 @@ Este código consta de varios de archivos:
  
  En la carpeta **img** se encuentran todas las imagenes que intervienen en el desarrollo del juego.
 
-# Luna Lander Version 2.0
+# Luna Lander 
+## Version 2.0
  Tareas a desarrollar : 
 
 * Añadiremos un Login y un SignUp.
@@ -174,7 +177,8 @@ Registrar Usuario:
 
 
 
-# Luna Lander Version 3.0
+# Luna Lander 
+## Version 3.0
 
   Tareas a desarrollar : 
 
@@ -214,7 +218,8 @@ Registrar Usuario:
     * Si ocurre un a excepción, devolver el mensaje de error:  emess.put("error", e.toString());
     
    
-   # Luna Lander Version 4.0
+   # Luna Lander 
+   ## Version 4.0
    
    Tareas a desarrollar : 
 
